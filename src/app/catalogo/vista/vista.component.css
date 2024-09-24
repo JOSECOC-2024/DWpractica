@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right a {
+  margin: 0 10px;
+  color: #f33;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.navbar-right i {
+  font-size: 1.5em;
+}
+
+/* Estilo para la segunda fila con los enlaces */
+.navbar-links {
+  padding: 10px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.links-left a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.links-left a.active {
+  color: #f33;
+}
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right a {
+  margin: 0 10px;
+  color: #f33;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.navbar-right i {
+  font-size: 1.5em;
+}
+
+.separator {
+  height: 30px;
+  width: 1px;
+  background-color: #ccc;
+}

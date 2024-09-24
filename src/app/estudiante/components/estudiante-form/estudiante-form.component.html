@@ -1,0 +1,43 @@
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Nombre:</label>
+    <input class="form-control mb-2" id="name" formControlName="name">
+  </div>
+  <div>
+    <label for="lastname">Apellido:</label>
+    <input class="form-control mb-2" id="lastname" formControlName="lastname">
+  </div>
+  <div>
+    <label for="dpi">DPI:</label>
+    <input class="form-control mb-2" id="dpi" formControlName="dpi">
+  </div>
+  <div>
+    <label for="telefono_celular">Telefono Celular:</label>
+    <input class="form-control mb-2" id="telefono_celular" formControlName="telefono_celular">
+  </div>
+  <div>
+    <label for="telefono_casa">Telefono Casa:</label>
+    <input class="form-control mb-2" id="telefono_casa" formControlName="telefono_casa">
+  </div>
+  <div>
+    <label for="email">Correo Electronico:</label>
+    <input class="form-control mb-2" id="email" formControlName="email">
+  </div>
+  <div>
+    <label for="nit">NIT:</label>
+    <input class="form-control mb-2" id="nit" formControlName="nit">
+  </div>
+  <div>
+    <label for="direccion">Direccion Domicilio:</label>
+    <input class="form-control mb-2" id="direccion" formControlName="direccion">
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-auto">
+      <button class="btn btn-primary" type="submit" [disabled]="studentForm.invalid">Guardar en Lista</button>
+    </div>
+    <div class="col-auto">
+      <button class="btn btn-primary" type="button" (click)="saveToFirebase()" [disabled]="studentForm.invalid">Guardar en Firebase</button>
+    </div>
+  </div>
+</form>
+

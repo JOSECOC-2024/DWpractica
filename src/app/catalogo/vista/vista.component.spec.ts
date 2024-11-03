@@ -11,7 +11,7 @@ describe('VistaComponent', () => {
       declarations: [VistaComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(VistaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
